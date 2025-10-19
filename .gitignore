@@ -1,0 +1,46 @@
+# -----------------------------
+# Flutter/Dart
+# -----------------------------
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+*.iml
+*.lock
+*.log
+
+# -----------------------------
+# Python
+# -----------------------------
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+*.sqlite3
+*.h5
+*.log
+
+# -----------------------------
+# OS / IDE
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------
+# Other / temporary
+# -----------------------------
+*.tmp
+*.bak
+*.orig
