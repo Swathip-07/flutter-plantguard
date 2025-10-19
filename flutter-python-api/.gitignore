@@ -1,0 +1,80 @@
+# ==========================
+# Python ignores
+# ==========================
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+instance/
+*.log
+*.pot
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+.eggs/
+pip-wheel-metadata/
+.wheelhouse/
+.env
+.env/
+.env.bak
+.envrc
+.env.local
+.env.production
+.env.staging
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# VS Code Python settings
+.vscode/settings.json
+
+# ==========================
+# Flutter / Dart ignores
+# ==========================
+# Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+*.lock
+*.log
+
+# Android Studio / Gradle
+android/.gradle/
+android/app/build/
+android/local.properties
+
+# iOS / Xcode
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/ServiceDefinitions.json
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/Runner.xcworkspace/
+ios/Runner/GeneratedPluginRegistrant.*
+
+# ==========================
+# Visual Studio Code / JetBrains
+# ==========================
+.vscode/
+.idea/
+*.iml
+
+# ==========================
+# OS generated files
+# ==========================
+.DS_Store
+Thumbs.db
+desktop.ini
