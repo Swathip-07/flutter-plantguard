@@ -1,4 +1,3 @@
-# img_cnn.py
 import tensorflow as tf
 import numpy as np
 from tensorflow.keras.preprocessing import image
@@ -7,6 +6,13 @@ from tensorflow.keras.layers import InputLayer
 from PIL import Image
 import io
 import os
+import logging
+
+# -----------------------------
+# Logging setup
+# -----------------------------
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # -----------------------------
 # Model path and class names
@@ -37,24 +43,23 @@ IRRELEVANT_LABEL = "irrelevant"
 # -----------------------------
 def safe_load_model(path):
     if not os.path.exists(path):
-        print(f"⚠️ Model path not found: {path}")
+        logger.warning(f"⚠️ Model path not found: {path}")
         return None
     try:
         # custom_objects ensures InputLayer with batch_shape works
         model = load_model(path, compile=False, custom_objects={'InputLayer': InputLayer})
-        print(f"✅ Loaded {path}")
+        logger.info(f"✅ Loaded model from {path}")
         return model
     except Exception as e:
-        print(f"❌ Failed to load {path}: {e}")
+        logger.error(f"❌ Failed to load {path}: {e}")
         return None
 
 # -----------------------------
 # Load single model
 # -----------------------------
 models = [safe_load_model(MODEL_PATH)]
-# Filter out None in case model failed to load
 models = [m for m in models if m is not None]
-print(f"Loaded {len(models)} model(s)")
+logger.info(f"Loaded {len(models)} model(s)")
 
 # -----------------------------
 # Image preprocessing
