@@ -1,0 +1,51 @@
+# -----------------------------
+# Flutter/Dart
+# -----------------------------
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+*.iml
+*.lock
+*.log
+
+# -----------------------------
+# Python
+# -----------------------------
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+*.sqlite3
+# Remove global h5 ignore
+# *.h5   <-- removed
+
+# -----------------------------
+# OS / IDE
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------
+# Other / temporary
+# -----------------------------
+*.tmp
+*.bak
+*.orig
+
+# -----------------------------
+# CNN Models tracked via Git LFS
+# -----------------------------
+flutter-python-api/cnn_models/*.h5
