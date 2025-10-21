@@ -54,6 +54,7 @@ def safe_load_model(path):
 models = [safe_load_model(MODEL_PATH)]
 # Filter out None in case model failed to load
 models = [m for m in models if m is not None]
+print(f"Loaded {len(models)} model(s)")
 
 # -----------------------------
 # Image preprocessing
