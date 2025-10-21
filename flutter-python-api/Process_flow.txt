@@ -1,8 +1,0 @@
-Run this in cmnd prompt for starting up the serveror asgi(Asynchronous gateway server interface)
-(venv) C:\Flutter_projects\flutter-python-api>uvicorn main:app --reload --host 0.0.0.0 --port 8000
-
-flutter run for running the app
-before running anything install all the requirements.txt
-
-
-

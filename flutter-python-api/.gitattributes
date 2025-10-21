@@ -1,1 +1,1 @@
-*.h5 filter=lfs diff=lfs merge=lfs -text
+flutter-python-api/cnn_models/*.h5 filter=lfs diff=lfs merge=lfs -text
