@@ -11,13 +11,17 @@ import os
 # -----------------------------
 # Model paths and class names
 # -----------------------------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.join(BASE_DIR, "cnn_models")  # adjust if needed
+
 MODEL_PATHS = [
-    r"C:\flutter_plantguard\flutter-python-api\cnn_models\best_model_fold1.h5",
-    r"C:\flutter_plantguard\flutter-python-api\cnn_models\best_model_fold2.h5",
-    r"C:\flutter_plantguard\flutter-python-api\cnn_models\best_model_fold3.h5",
-    r"C:\flutter_plantguard\flutter-python-api\cnn_models\best_model_fold4.h5",
-    r"C:\flutter_plantguard\flutter-python-api\cnn_models\best_model_fold5.h5",
+    os.path.join(MODEL_DIR, "best_model_fold1.h5"),
+    os.path.join(MODEL_DIR, "best_model_fold2.h5"),
+    os.path.join(MODEL_DIR, "best_model_fold3.h5"),
+    os.path.join(MODEL_DIR, "best_model_fold4.h5"),
+    os.path.join(MODEL_DIR, "best_model_fold5.h5"),
 ]
+
 
 CLASS_NAMES = [
     'Tomato___Bacterial_spot',
