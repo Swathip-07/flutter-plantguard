@@ -9,14 +9,12 @@ import io
 import os
 
 # -----------------------------
-# Model paths and class names
+# Model path and class names
 # -----------------------------
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_DIR = os.path.join(BASE_DIR, "cnn_models")  # adjust if needed
 
 MODEL_PATH = os.path.join(MODEL_DIR, "best_model_fold1.h5")
-   
-
 
 CLASS_NAMES = [
     'Tomato___Bacterial_spot',
@@ -51,10 +49,10 @@ def safe_load_model(path):
         return None
 
 # -----------------------------
-# Load all models
+# Load single model
 # -----------------------------
-models = [safe_load_model(p) for p in MODEL_PATHS]
-# Filter out None in case some models failed to load
+models = [safe_load_model(MODEL_PATH)]
+# Filter out None in case model failed to load
 models = [m for m in models if m is not None]
 
 # -----------------------------
